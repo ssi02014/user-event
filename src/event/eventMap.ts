@@ -33,7 +33,7 @@ function getEventClass(type: EventType) {
 
 const mouseEvents = ['MouseEvent', 'PointerEvent']
 export function isMouseEvent(type: EventType) {
-  return mouseEvents.includes(getEventClass(type) as string)
+  return mouseEvents.includes(getEventClass(type) as EventInterface)
 }
 
 export function isKeyboardEvent(type: EventType) {
